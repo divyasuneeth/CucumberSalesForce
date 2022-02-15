@@ -1,6 +1,6 @@
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/utility/GenerateReport.java
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/utility/Constants.java
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/utility/MyDriver.java
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/base/BasePage.java
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/base/Page.java
-/Users/admin/TechArch/CucumberSaleforcePOM/src/main/java/com/salesforce/utility/ReadProperty.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/base/Page.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/utility/MyDriver.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/utility/ReadProperty.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/base/BasePage.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/utility/GenerateReport.java
+/Users/admin/TechArch/CucumberSaleforce_POM/src/main/java/com/salesforce/utility/Constants.java

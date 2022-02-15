@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-13T19:30:29 PST" name="CucumberSalesForceTestSuit" finished-at="2022-02-13T19:30:52 PST" duration-ms="22628">
+  <suite name="CucumberSalesForceTestSuit" duration-ms="23701" started-at="2022-02-14T15:40:00 PST" finished-at="2022-02-14T15:40:24 PST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-13T19:30:29 PST" name="UserAcceptance" finished-at="2022-02-13T19:30:52 PST" duration-ms="22628">
+    <test name="UserAcceptance" duration-ms="23701" started-at="2022-02-14T15:40:00 PST" finished-at="2022-02-14T15:40:24 PST">
       <class name="com.salesforce.runner.TestRunnerSFLogin">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:29 PST" name="setUpClass" finished-at="2022-02-13T19:30:30 PST" duration-ms="405" status="PASS">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="setUpClass" is-config="true" duration-ms="499" started-at="2022-02-14T15:40:00 PST" finished-at="2022-02-14T15:40:01 PST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2f3166a]]>
+                <![CDATA[org.testng.TestRunner@4d6ee47]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:30 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T19:30:34 PST" duration-ms="3825" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="runScenario" duration-ms="3813" started-at="2022-02-14T15:40:01 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-14T15:40:05 PST">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:34 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T19:30:40 PST" duration-ms="6389" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="runScenario" duration-ms="6988" started-at="2022-02-14T15:40:05 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-14T15:40:12 PST">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:40 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T19:30:48 PST" duration-ms="8479" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="runScenario" duration-ms="9311" started-at="2022-02-14T15:40:12 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-14T15:40:21 PST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:48 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T19:30:52 PST" duration-ms="3457" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="runScenario" duration-ms="3025" started-at="2022-02-14T15:40:21 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-14T15:40:24 PST">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@276438c9]" started-at="2022-02-13T19:30:52 PST" name="tearDownClass" finished-at="2022-02-13T19:30:52 PST" duration-ms="49" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@64bf3bbf]" name="tearDownClass" is-config="true" duration-ms="36" started-at="2022-02-14T15:40:24 PST" finished-at="2022-02-14T15:40:24 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
