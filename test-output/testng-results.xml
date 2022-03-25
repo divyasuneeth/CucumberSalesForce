@@ -1,91 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-13T18:58:51 PST" name="CucumberSalesForceTestSuit" finished-at="2022-02-13T18:59:13 PST" duration-ms="21918">
+  <suite name="CucumberSalesForceTestSuit" duration-ms="452" started-at="2022-02-22T11:28:11 PST" finished-at="2022-02-22T11:28:11 PST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@4b553d26]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-13T18:58:51 PST" name="UserAcceptance" finished-at="2022-02-13T18:59:13 PST" duration-ms="21918">
+    <test name="UserAcceptance" duration-ms="452" started-at="2022-02-22T11:28:11 PST" finished-at="2022-02-22T11:28:11 PST">
       <class name="com.salesforce.runner.TestRunnerSFLogin">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:58:51 PST" name="setUpClass" finished-at="2022-02-13T18:58:52 PST" duration-ms="195" status="PASS">
+        <test-method status="FAIL" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@4b553d26]" name="setUpClass" is-config="true" duration-ms="422" started-at="2022-02-22T11:28:11 PST" finished-at="2022-02-22T11:28:11 PST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4f0f7849]]>
+                <![CDATA[org.testng.TestRunner@72035809]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.java.InvalidMethodSignatureException">
+            <message>
+              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.salesforce.steps.SFLoginStepDef.setup(java.lang.String)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.salesforce.steps.SFLoginStepDef.setup(java.lang.String)
+
+
+at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:52)
+at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:33)
+at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:19)
+at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:67)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:58)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+at io.cucumber.core.runner.Runner.<init>(Runner.java:56)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
+at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:284)
+at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:114)
+at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:65)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:124)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:58:52 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T18:58:56 PST" duration-ms="3866" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checking login with invalid login credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Implement Salesforce Login page]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:58:56 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T18:59:02 PST" duration-ms="6957" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checking login with valid login credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Implement Salesforce Login page]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T18:59:11 PST" duration-ms="8042" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checking username saved when remember me option selected"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Implement Salesforce Login page]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:59:11 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T18:59:13 PST" duration-ms="2817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checking forgot password link"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Implement Salesforce Login page]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@1d082e88]" started-at="2022-02-13T18:59:13 PST" name="tearDownClass" finished-at="2022-02-13T18:59:13 PST" duration-ms="8" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.salesforce.runner.TestRunnerSFLogin@4b553d26]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2022-02-22T11:28:11 PST" finished-at="2022-02-22T11:28:11 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

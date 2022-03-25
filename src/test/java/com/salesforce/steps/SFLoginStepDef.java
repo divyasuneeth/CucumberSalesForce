@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.salesforce.base.Page;
 import com.salesforce.pages.home.HomePage;
@@ -23,19 +25,24 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SFLoginStepDef {
-	private  WebDriver driver;
-	private  WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 	private static SFLoginPage login;
 	private static HomePage home;
 	private static ForgotPasswordPage fpage;
 	private static Page page;
 
+	
 	@Before
+	//@Parameters({"browser"})
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 10);
-		page = new Page(driver, wait);
+		String browser="chrome";
+		if (browser.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			wait = new WebDriverWait(driver, 10);
+			page = new Page(driver, wait);
+		}
 
 	}
 
@@ -48,7 +55,7 @@ public class SFLoginStepDef {
 	@When("user on {string}")
 	public void user_on(String screen) {
 		if (screen.equalsIgnoreCase("SFLoginPage")) {
-			login =page.getInsatnce(SFLoginPage.class);
+			login = page.getInsatnce(SFLoginPage.class);
 		} else if (screen.equalsIgnoreCase("HomePage")) {
 			home = page.getInsatnce(HomePage.class);
 		} else if (screen.equalsIgnoreCase("ForgotPasswordPage")) {

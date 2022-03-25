@@ -9,13 +9,53 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">CucumberSalesForceTestSuit</th></tr>
-<tr><td><a href="#t0">UserAcceptance</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,918</td><td></td><td></td></tr>
+<tr><td><a href="#t0">UserAcceptance</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">452</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CucumberSalesForceTestSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UserAcceptance &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.salesforce.runner.TestRunnerSFLogin</td><td><a href="#m0">runScenario</a></td><td rowspan="4">1644807536017</td><td rowspan="4">6957</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CucumberSalesForceTestSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UserAcceptance &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.salesforce.runner.TestRunnerSFLogin</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1645558091465</td><td rowspan="1">422</td></tr></tbody>
 </table>
-<h2>UserAcceptance</h2><h3 id="m0">com.salesforce.runner.TestRunnerSFLogin#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;checking login with valid login credentials&quot;</td><td>&quot;Optional[Implement Salesforce Login page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.salesforce.runner.TestRunnerSFLogin#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;checking username saved when remember me option selected&quot;</td><td>&quot;Optional[Implement Salesforce Login page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.salesforce.runner.TestRunnerSFLogin#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;checking login with invalid login credentials&quot;</td><td>&quot;Optional[Implement Salesforce Login page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.salesforce.runner.TestRunnerSFLogin#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;checking forgot password link&quot;</td><td>&quot;Optional[Implement Salesforce Login page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>UserAcceptance</h2><h3 id="m0">com.salesforce.runner.TestRunnerSFLogin#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@72035809</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.salesforce.steps.SFLoginStepDef.setup(java.lang.String)
+
+
+	at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+	at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:52)
+	at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:33)
+	at io.cucumber.java.JavaHookDefinition.&lt;init&gt;(JavaHookDefinition.java:19)
+	at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+	at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:67)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:58)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
+	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:56)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
+	at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:284)
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:114)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:65)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
